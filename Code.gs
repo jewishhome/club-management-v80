@@ -6,8 +6,8 @@ const scriptProperties = PropertiesService.getScriptProperties();
 
 function getSettings() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
-  const sheet = ss.getSheetByName("Settings");
-  if (!sheet) throw new Error("לשונית Settings לא נמצאה!");
+  const sheet = ss.getSheetByName("הגדרות");
+  if (!sheet) throw new Error("לשונית הגדרות לא נמצאה!");
   
   const data = sheet.getDataRange().getValues();
   const settings = {};
